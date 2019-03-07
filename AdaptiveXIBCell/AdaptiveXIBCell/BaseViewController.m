@@ -28,6 +28,8 @@ static NSString *identifier = @"AdaptiveTableViewCell";
 - (NSArray *)dataSource {
     if (!_dataSource) {
         self.dataSource = [AdaptiveModel mj_objectArrayWithFilename:@"ModelList.plist"];
+//        self.dataSource=[NSArray arrayWithContentsOfFile:@"ModelList.plist"];
+        
     }
     return _dataSource;
 }

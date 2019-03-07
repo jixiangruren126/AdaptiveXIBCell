@@ -14,4 +14,6 @@
 @property (nonatomic, copy) NSString *text;         // 正文
 @property (nonatomic, copy) NSString *picture;      // 图片
 
+
+
 @end

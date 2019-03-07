@@ -10,4 +10,18 @@
 
 @implementation AdaptiveModel
 
++ (instancetype)statusWithDict:(NSDictionary *)dict
+{
+    AdaptiveModel *status = [[self alloc] init];
+    //利用KVC字典转模型
+    [status setValuesForKeysWithDictionary:dict];
+
+    
+    return status;
+}
+
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    
+}
 @end
